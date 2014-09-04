@@ -8,7 +8,7 @@
     <h1>Room List</h1>
     <ul>
         <li ng-repeat="room in rooms">
-            {{room.name}} : {{room.$id}}
+            {{room.name}} : {{room.$id}} - <a href="/room/{{room.$id}}">Join</a>
         </li>
     </ul>
 </div>
