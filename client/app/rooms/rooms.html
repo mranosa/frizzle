@@ -1,3 +1,14 @@
 <div class="col-md-12">
-This is the rooms view.
+    
+    <form ng-submit="addRoom(newRoom)">
+        <input ng-model="newRoom" />
+        <button type="submit">add Room</button>
+    </form>
+
+    <h1>Room List</h1>
+    <ul>
+        <li ng-repeat="room in rooms">
+            {{room.name}} : {{room.$id}}
+        </li>
+    </ul>
 </div>

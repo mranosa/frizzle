@@ -6,7 +6,8 @@ angular.module('frizzleApp', [
   'ngSanitize',
   'ngRoute',
   'ui.bootstrap',
-  'LocalStorageModule'
+  'LocalStorageModule',
+  'firebase'
 ])
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
