@@ -5,12 +5,13 @@ angular.module('frizzleApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'LocalStorageModule'
 ])
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/login'
       });
 
     $locationProvider.html5Mode(true);
